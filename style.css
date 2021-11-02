@@ -1,0 +1,43 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#grid-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;    
+    margin: 50px;
+    height: 600px;
+    width: 900px;    
+}
+
+.grid-row {
+    display: flex;
+    flex-direction: row;    
+}
+
+.grid-square {    
+    width: 25px;
+    height: 25px;
+}
+
+.square-colour {
+    background-color: black;
+}
