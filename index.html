@@ -12,15 +12,42 @@
                 <h1>Etch-a-Sketch</h1>
             </header>
             <section id="game-container">
-                <div id="grid-container"></div>
-                <div id="button-container">
-                    <button id="start-button">Start</button>
-                    <button id="clear-button">Clear</button> 
+                <div id="options-container">
+                    <form>
+                        <div>
+                            <input type="radio" id="normal-mode" name="mode-select" value="Black">
+                            <label for="normal-mode">Black</label><br>
+                        </div>
+                        <div>
+                            <input type="radio" id="shaded-mode" name="mode-select" value="Shaded">
+                            <label for="shaded-mode">Shaded</label><br>
+                        </div>
+                        <div>
+                            <input type="radio" id="rainbow-mode" name="mode-select" value="Rainbow">
+                            <label for="rainbow-mode">Rainbow</label><br>
+                        </div>
+                        <div>
+                            <input type="radio" id="erase-mode" name="mode-select" value="Erase">
+                            <label for="erase-mode">Erase</label><br>
+                        </div>                        
+                    </form>
+                    <div id="slide-container">
+                        <h3>Grid Size</h3>
+                        <input type="range" min="12" max="64" value="38" class="slider" id="myRange" autocomplete="off">
+                        <output></output>
+                      </div>
+                    <button id="clear-button">Clear</button>                     
+                </div>             
+                <div id="grid-container"></div> 
+                <div id="instructions">
+                    <h2>How to play</h2>
+                    <p>Hover over the canvas to start filling in the pixels.</p>
+                    <p>Change the colour mode by clicking on the buttons on the left.</p>
+                    <p>Clear the canvas by clicking the clear button on the left.</p>
+                    <p>Have fun!</p>
                 </div>
             </section>
-            <article>
-                <h2>How to play</h2>
-            </article>
+            
             <footer>
                 <p>Copyright Craig Summers 2021</p>
             </footer>

@@ -19,13 +19,35 @@ main {
     gap: 30px;
 }
 
+#game-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+}
+
 #grid-container {
     display: flex;
     flex-direction: column;
     border: 1px solid black;    
     margin: 50px;
     height: 600px;
-    width: 900px;    
+    width: 600px;    
+}
+
+#options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#instructions {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    
 }
 
 .grid-row {
@@ -36,8 +58,24 @@ main {
 .grid-square {    
     width: 25px;
     height: 25px;
+    background-color: rgba(255,255,255,1);
 }
 
 .square-colour {
-    background-color: black;
+    background-color: rgba(0,0,0,1);
+}
+
+form { 
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#slide-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
